@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color_blanco_fondos: #FFFFFF;
+    --color_rosa_acentos: #EFC7E6; /* Bordes alrededor de textos o imágenes, encabezados y subtitulos, líneas, divisores, gráficos pequeños, 
+    botones y enlaces proncipales*/
+    --color_dorado_detalles: #FFD700; /* Iconos o pequeños gráficos decorativos, como anillos, corazones, o flores. Texturas o patrones sutiles 
+    de fondo. Líneas finas o bordes dorados para resaltar secciones específicas. Elementos de realce como sombras suaves o degradados que añaden 
+    profundidad y dimensión*/
+    --color_verde_toqueNatural: #9DBEA5; /* Fondos de secciones específicas, como 'confirmación de asistencia o información adicional'. 
+    Pequeñas ilustraciones o patrones de hojas y plantas en verde salvia para añadir un elemento natural y fresco. Bordes alrededor de textos 
+    o imágenes. textos secundarios, sombras y acentos*/
+    --color_gris_textoSecundario: #B0B0B0; /* Direccoines, instrucciones, detalles del evento, confirmación de asisteencia, notas, citas o frases 
+    especiales*/
+
+    /* Fuentes combinación 1*/
+    --fuente_titulo_y_encabezados_cinzel: "Cinzel", serif;
+    --fuente_cuerpo_del_texto_lato: "Lato", sans-serif; 
+
+    /* Fuentes combinación 2*/
+    --fuente_titulo_y_encabezados_playfairDisplay: "Playfair Display", serif;
+    --fuente_cuerpo_del_texto_roboto: "Roboto", sans-serif;
+
+    /* Otras fuentes*/
+    --fuente_nombres_GreatVibes: "Great Vibes", cursive;
+    --fuente_detalles_adicionales_merriweather: "Merriweather", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #FFFDF9;
+}   
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 9rem;
+}
+
+.main__imgBackground__left, .main__imgBackground__right{
+    width: 20%;
+    position: absolute;
+}
+
+.main__imgBackground__left{
+    top: 0;
+    left: 0;
+}
+
+.main__imgBackground__right{
+    top: 0;
+    right: 0;
+}
+
+.presentacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+#presentacion__logoNovios{
+    width: 12rem;
+}
+
+.presentacion__nombresNovios{
+    margin-top: 3rem;
+    font-family: var(--fuente_nombres_GreatVibes);
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    /* font-style: italic; */
+}
+
+.presentacion__nombresNovios .presentacion__nombresNovios__letraCapital{
+    font-size: 5rem;
+}
+
+.presentacion__reproductorDeAudio{
+    width: 21rem;
+    height: 3rem;
+    margin-top: 3rem;
+    background-color: unset;
+}
+
+.presentacion__foto{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+
+
+@media(min-width: 768px){
+    #presentacion__logoNovios{
+        width: 14rem;
+    }
+
+    .presentacion__nombresNovios{
+        margin-top: 5rem;
+        font-size: 4rem;
+        /* letter-spacing: 1rem; */
+    }
+
+    .presentacion__reproductorDeAudio{
+        width: 32rem;
+        height: 4.5rem;
+        margin-top: 5rem;
+    }
+
+    .presentacion__nombresNovios .presentacion__nombresNovios__letraCapital{
+        font-size: 8rem;
+    }
+
+    .presentacion__foto{
+        width: unset;
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    #presentacion__logoNovios{
+        width: 22rem;
+    }
+
+    .presentacion__reproductorDeAudio{
+        width: 40rem;
+        height: 5rem;
+    }
+}
+
+@media(min-width: 1920px){
+    #presentacion__logoNovios{
+        width: 25rem;
+    }
+}
+
+
+
+
+
