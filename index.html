@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lili & Paul</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header></header>
@@ -13,12 +13,12 @@
         <img class="main__imgBackground__left" src="./assets/main_background_left.png" alt="rama de hojas verdes oscuras y claras">
         <img class="main__imgBackground__right" src="./assets/main_background_right.png" alt="rama de hojas verdes oscuras y claras">
         <section class="presentacion">
-            <img id="presentacion__logoNovios" src="./assets/logo.png" alt="logo con las iniciales de los novios">
-            <div class="presentacion__nombresNovios">
+            <img id="presentacion__logoNovios" src="./assets/logo2.png" alt="logo con las iniciales de los novios">
+            <h1 class="presentacion__nombresNovios">
                 <span class="presentacion__nombresNovios__letraCapital">L</span><span class="presentacion__nombresNovios">lili</span>
                 &nbsp; &nbsp; &nbsp; &nbsp; <span>&</span> &nbsp; &nbsp; &nbsp; &nbsp; 
                 <span class="presentacion__nombresNovios__letraCapital">P</span><span class="presentacion__nombresNovios">aul</span>
-            </div>
+            </h1>
             <audio class="presentacion__reproductorDeAudio" controls loop>
                 <source src="la-boda.mp3" type="audio/mpeg">
                 Tu navegador no soporta este componente de audio.
@@ -26,7 +26,26 @@
             <img class="presentacion__foto" src="./assets/foto1.webp" alt="novios en la playa">
         </section>
         <section class="informacion">
-            
+            <div class="informacion__lineaSeparacion"></div>
+            <h2>Nuestra Boda</h2>
+            <span class="informacion__fechaLugar"><span class="informacion__fechaLugar__vineta">30 de Marzo de 2025</span></span>
+            <span class="informacion__fechaLugar">Barranquilla, Atlántico</span>
+            <div class="informacion__cuentaRegresiva">
+                <div class="informacion__cuentaRegresiva__tiempo">
+                    <span id="informacion__cuentaRegresiva__dias" class="tiempo">000</span><span>:</span>
+                    <span id="informacion__cuentaRegresiva__horas" class="tiempo">00</span><span>:</span>
+                    <span id="informacion__cuentaRegresiva__minutos" class="tiempo">00</span><span>:</span>
+                    <span id="informacion__cuentaRegresiva__segundos" class="tiempo">00</span>
+                </div>
+                <div class="informacion__cuentaRegresiva__descripcion">
+                    <span class="informacion__cuentaRegresiva__texto">Días</span><span class="relleno">:</span><span class="informacion__cuentaRegresiva__texto">Horas</span><span class="relleno">:</span><span class="informacion__cuentaRegresiva__texto">Min</span><span class="relleno">:</span><span class="informacion__cuentaRegresiva__texto">Seg</span>
+                </div>
+            </div>
+            <div id="informacion__slider">
+                <img id="flecha_avanzar" class="flecha_desplazamiento_imagenes" src="assets/flecha_retroceder_40dp.svg" alt="flecha para avanzar">
+                <img id="flecha_retroceder" class="flecha_desplazamiento_imagenes" src="assets/flecha_retroceder_40dp.svg" alt="flecha para retroceder">
+                <img id="informacion__slider__foto" class="informacion__slider__foto" src="assets/foto6.webp" alt="">
+            </div>
         </section>
         <section class="descripcion"></section>
     </main>
